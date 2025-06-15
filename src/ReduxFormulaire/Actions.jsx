@@ -11,3 +11,20 @@ export function DELETE(index){
         payload : index
     }
 }
+
+export function UPDATE(NewObj, index) {
+    return {
+        type: 'UPDATE',
+        payload: {
+            index: index,
+            DataUP: NewObj
+        }
+    }
+}
+// Actions.js
+export function SET_SEARCH(value) {
+    return {
+        type: 'SET_SEARCH',
+        payload: value
+    }
+}
